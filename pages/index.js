@@ -1,11 +1,9 @@
-import styled from "styled-components"
+import Navbar from "../components/Navbar/Navbar"
 
-const H1 = styled.div`
-  background-color: black;
-`
-
-export default function Home(){
+export default function Home() {
   return (
-    <H1>H1</H1>
+    <>
+      <Navbar />
+    </>
   )
 }
