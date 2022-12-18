@@ -3,10 +3,10 @@ import Burger from "./Icons/Burger"
 import Location from "./Icons/Location"
 import ScaniaLogo from "./ScaniaLogo/ScaniaLogo"
 
-const Navbar = () => {
+const Navbar = ({ setNavbarStatus }) => {
   return (
     <NavContainer>
-        <Burger />
+        <Burger setNavbarStatus={() => setNavbarStatus(false)} />
         <ScaniaLogo />
         <Location />
     </NavContainer>

@@ -5,7 +5,7 @@ const LogoContainer = styled.div`
     align-items: center;
 
     > img {
-        width: 3em;
+        width: 2.8em;
         height: auto;
     }
 `
