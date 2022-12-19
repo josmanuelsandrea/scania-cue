@@ -12,7 +12,6 @@ const DivContainer = styled.div`
 `
 
 const Container = ({ statusNavbar }) => {
-
     return (
         <DivContainer>
             <NavbarElements navbarStatus={statusNavbar} />

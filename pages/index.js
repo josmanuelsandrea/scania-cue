@@ -12,7 +12,7 @@ const Main = styled.main`
 
 export default function Home() {
     /* This state is for the status of the navbar */
-    const [statusNavbar, setActiveNavbar] = useState(true)
+    const [statusNavbar, setActiveNavbar] = useState(false)
     const changeStatus = () => {
         setActiveNavbar(!statusNavbar)
     }

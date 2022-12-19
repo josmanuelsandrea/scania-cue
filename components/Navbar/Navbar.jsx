@@ -5,7 +5,7 @@ import ScaniaLogo from "./ScaniaLogo/ScaniaLogo"
 
 const Navbar = ({ setNavbarStatus }) => {
   return (
-    <NavContainer>
+    <NavContainer role="Navbar">
         <Burger setNavbarStatus={() => setNavbarStatus(false)} />
         <ScaniaLogo />
         <Location />
