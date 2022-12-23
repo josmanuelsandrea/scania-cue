@@ -10,11 +10,13 @@
     --Scania-Grey-400: #CDD1DB;
     --Scania-Grey-500: #B0B7C4;
     --Scania-Grey-600: #868FA2;
+    --Scania-Grey-600-transparent: rgb(134, 143, 162, .5);
     --Scania-Grey-700: #56657A;
     --Scania-Grey-800: #37414F;
     --Scania-Grey-846: #2B323D;
     --Scania-Grey-868: #242A33;
     --Scania-Grey-900: #1D2229;
+    --Scania-Grey-900-transparent: rgb(29, 34, 41, .5);
     --Scania-Grey-958: #0D0F13;
 
     /* These colors have been taken from https://digitaldesign.scania.com/foundations/foundation-colours/specification */

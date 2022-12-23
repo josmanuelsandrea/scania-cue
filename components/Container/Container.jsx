@@ -9,6 +9,7 @@ const DivContainer = styled.div`
     background-color: var(--Scania-Grey-50);
     display: flex;
     position: relative;
+    height: 100%;
 `
 
 const Container = ({ statusNavbar }) => {

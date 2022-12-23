@@ -8,4 +8,5 @@ export const NavContainer = styled.div`
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1.6px;
   border-bottom: 1px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
 `
