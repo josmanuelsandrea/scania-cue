@@ -18,17 +18,17 @@ const ImageBackground = styled.div`
     background-image: url(${props => props.background_image});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: ${props => props.bg_position};
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
 `
 
-const Card = ({ background_image, title }) => {
+const Card = ({ background_image, title, bg_position }) => {
   return (
     <CardDiv >
-        <ImageBackground background_image={background_image} />
+        <ImageBackground background_image={background_image} bg_position={bg_position} />
         <Title>{title}</Title>
     </CardDiv>
   )

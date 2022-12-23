@@ -6,15 +6,15 @@ const Div = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
-  height: 100%;
+  flex: 1 0;
 `
 
 const CardsGrid = () => {
   return (
     <Div>
-        <Card background_image={"/images/Cards/Truck.jpeg"} title="Soluciones eléctricas"/>
-        <Card background_image={"/images/Cards/Truck.jpeg"} title="Puestos disponibles"/> 
-        <Card background_image={"/images/Cards/Truck.jpeg"} title="Gama super"/>
+        <Card background_image={"/images/Cards/Truck.jpeg"} bg_position={"top"} title="Soluciones eléctricas"/>
+        <Card background_image={"/images/Cards/Technician.jpg"} bg_position={"center"} title="Puestos disponibles"/> 
+        <Card background_image={"/images/Cards/Super.jpeg"} title="Gama super"/>
     </Div>
   )
 }
