@@ -61,13 +61,12 @@ const Button = styled.a`
     padding: .4em .8em;
     border: 2px solid var(--Scania-White);
     margin: .8em;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: var(--Scania-Font);
-    font-size: 1.2em;
+    font-size: 1.1em;
 `
 
-const Card = ({ background_image, title, bg_position }) => {
+const Card = ({ background_image, title, bg_position, text, button_text }) => {
     return (
         <CardDiv>
             <ImageBackground background_image={background_image} bg_position={bg_position} />
@@ -75,8 +74,8 @@ const Card = ({ background_image, title, bg_position }) => {
                 <Title>{title}</Title>
             </Padding>
             <Description className="card_description_text">
-                <Text>El objetivo de Scania es impulsar el cambio hacia un sistema de transporte sostenible, mediante el desarrollo de soluciones de transporte seguras, inteligentes y energéticamente eficientes que sean mejores para las personas y el planeta.</Text>
-                <Button>Ver ofertas</Button>
+                <Text>{text}</Text>
+                <Button>{button_text}</Button>
             </Description>
         </CardDiv>
     )
