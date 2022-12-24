@@ -10,7 +10,7 @@ const Div = styled.div`
 
 const CardsGrid = () => {
   return (
-    <Div>
+    <Div role="cards-grid">
         <Card 
             background_image={"/images/Cards/Truck.jpeg"} 
             bg_position={"top"} 

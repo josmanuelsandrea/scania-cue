@@ -69,7 +69,7 @@ const Button = styled.a`
 const Card = ({ background_image, title, bg_position, text, button_text }) => {
     return (
         <CardDiv>
-            <ImageBackground background_image={background_image} bg_position={bg_position} />
+            <ImageBackground background_image={background_image} bg_position={bg_position} role="background_image_card" />
             <Padding>
                 <Title>{title}</Title>
             </Padding>
