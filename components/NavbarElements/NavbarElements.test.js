@@ -10,7 +10,6 @@ describe('NavbarElements styling', () => {
 
         expect(component).toHaveStyle({
             transform: 'translateX(0%)',
-            paddingRight: `${sizesConfig.padding_spacing}%`,
             width: `${sizesConfig.left_side_size}%`,
         })
     })
