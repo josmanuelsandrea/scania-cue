@@ -1,4 +1,5 @@
 import { HiBars3 as BurgerIcon } from "react-icons/hi2"
+import { RxCross1 as Cross } from 'react-icons/rx'
 import styled from "styled-components"
 
 export const IconContainer = styled.div`
@@ -9,10 +10,10 @@ export const IconContainer = styled.div`
     padding: .3em .3em;
 `
 
-const Burger = ({ setNavbarStatus }) => {
+const Burger = ({ setNavbarStatus, statusNavbar }) => {
   return (
     <IconContainer>
-        <BurgerIcon onClick={setNavbarStatus}/>
+        {statusNavbar ? <Cross onClick={setNavbarStatus} /> : <BurgerIcon onClick={setNavbarStatus}/> }
     </IconContainer>
   )
 }

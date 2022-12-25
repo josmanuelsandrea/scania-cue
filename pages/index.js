@@ -13,7 +13,7 @@ const Main = styled.main`
 
 export default function Home() {
     /* This state is for the status of the navbar */
-    const [statusNavbar, setActiveNavbar] = useState(false)
+    const [statusNavbar, setActiveNavbar] = useState(true)
     const changeStatus = () => {
         setActiveNavbar(!statusNavbar)
     }
@@ -24,7 +24,7 @@ export default function Home() {
                 <title>SCANIA - Home</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-            <Navbar setNavbarStatus={changeStatus} />
+            <Navbar setNavbarStatus={changeStatus} statusNavbar={statusNavbar} />
             <Container statusNavbar={statusNavbar} />
         </Main>
     )
