@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Navbar from "../components/Navbar/Navbar"
 import Container from "../components/Container/Container"
 import { useState } from "react"
+import Head from "next/head"
 
 const Main = styled.main`
     display: flex;
@@ -19,6 +20,10 @@ export default function Home() {
 
     return (
         <Main>
+            <Head>
+                <title>SCANIA - Home</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
             <Navbar setNavbarStatus={changeStatus} />
             <Container statusNavbar={statusNavbar} />
         </Main>
