@@ -1,6 +1,4 @@
-import { MdKeyboardArrowDown as ArrowDown } from 'react-icons/md'
-import { TitleDiv } from '../Dropdown/Dropdown.style'
-import { paddingConfig } from '../NavbarSections.config'
+import ContentDropdown from './ContentDropdown/ContentDropdown'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -9,17 +7,12 @@ const Container = styled.div`
 	width: 100%;
 `
 
-const Title = styled(TitleDiv)`
-	padding-right: ${paddingConfig.paddingOfTitle + 'em'};
-`
-
-const SubDropdown = () => {
+const SubDropdown = ({ subList }) => {
 	return (
 		<Container>
-			<Title>
-				<h3>Camiones</h3>
-				<ArrowDown />
-			</Title>
+			{subList ? subList.map(x =>
+				<ContentDropdown content={x} />
+			) : null}
 		</Container>
 	)
 }

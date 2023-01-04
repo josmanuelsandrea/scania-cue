@@ -12,6 +12,7 @@ export const TitleDiv = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: var(--Scania-Font-2);
     text-transform: uppercase;
     color: var(--Scania-Blue);
@@ -21,11 +22,12 @@ export const TitleDiv = styled.div`
         font-size: 1.5em;
     }
 
-    > h3 {
+    > p, a {
         border-bottom: 2px solid transparent;
+        font-weight: 600;
     }
 
-    > h3:hover {
+    > a:hover, p:hover{
         border-bottom: 2px solid var(--Scania-Blue);
     }
 `
